@@ -36,12 +36,7 @@ describe 'Deli Counter' do
   end
 
   describe "#now_serving" do
-    context "there are no people in line" do
-      it "should say that the line is empty" do
-        expect($stdout).to receive(:puts).with("There is nobody waiting to be served!")
-        now_serving(katz_deli)
-      end
-    end
+
 
     context "there are people in line" do
       it "should serve the first person in line and remove them from the queue" do
